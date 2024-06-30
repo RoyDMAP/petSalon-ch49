@@ -1,0 +1,91 @@
+/*header*/
+header{
+    background-image: url(./img/background2.jpg);
+    image-resolution: 100%;
+    background-size: cover;
+    height: 300px;
+    padding: 1px;
+
+}
+
+body {
+    background-image: url(./img/background.jpg);
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+    font-style: bold;
+    font-display: flex;
+    font-size: 70px;
+    color: darkblue;
+       
+}
+nav{
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: -7%;
+    
+}
+
+button {
+    display: block; 
+    margin: 0 auto; 
+    background-color: lightblue;
+    color: black;
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-top: -60px;
+    
+}
+#petList{
+    text-align: left;
+    font-size: 20px;
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    width: 15%; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#container {
+    margin-top: -300px;
+    margin-left: 200px;
+    
+    
+}
+
+.dog-head {
+  z-index: 50;
+  -webkit-animation: head-move 1s ease-in-out infinite;
+  margin-left: -20px;
+ 
+}
+
+div.dog-body {
+  height: 300px;
+  width: 225px;
+  margin-top: -175px;
+  margin-left: 1px;
+  background-image: url('http://www.clker.com/cliparts/T/0/9/J/e/4/dog-body-md.png');
+  background-repeat: no-repeat;
+}
+
+
+
+/*ANIMATIONS
+---------------------------------------------------------*/
+
+@-webkit-keyframes head-move {
+  50% { 
+    -webkit-transform: rotate(-1.2deg); 
+  }
+}
+
+
