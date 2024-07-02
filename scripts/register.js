@@ -31,7 +31,7 @@ let pets = [
       age: 85,
       gender: "Female",
       service: "grooming",
-      breed: "pitbull"
+      breed: "pitbull",
     },
 ];
   
