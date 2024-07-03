@@ -34,18 +34,17 @@ nav{
 }
 
 button {
-    display: block; 
+    display: block;
     margin: 0 auto; 
     background-color: lightblue;
-    color: black;
+    color: rgb(195, 4, 4);
     border:color-mix(in hsl shorter hue, color percentage, color percentage);
     padding: 20px 40px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 2px;
-    margin-top: -60px;
-    
-}
+    margin-top: 20px;
 
+}
 #petList{
     text-align: left;
     font-size: 20px;
@@ -90,47 +89,29 @@ div.dog-body {
 
 .form-container{
     background-color: #dedede;
-    padding: 10px;
-    margin: 40px;
-    border-radius: 15px;
+    padding: 100px;
+    margin-top: 250px;
+    margin-bottom: 30px;
     width: 90%;
-    max-width: 1000px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: 25px; 
+    
 }
 
-fieldset{
+.mb-3{
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     border: 1px solid gray;
     
-} 
+}   
 
-legend{
-    font-size: 25px;
-}
-
-.input-container{
-    margin: 20px;
-    height: 100%;
-    width: 70%;
-    display: flex;
-
-}
-
-.input-container label{
-    display: inline-block;
-    width: 100px;
-
-}
-
-.input-container input,
-.input-container textarea,
-.input-container select{
-    width: 70%;
-    padding: 3px;
+footer{
+    background-color: whitesmoke;
+    background-size: cover;
+    height: 100px;
 }
 
 

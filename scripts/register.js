@@ -9,42 +9,41 @@ console.log("register.js")
 // Service
 // Breed
 
-let pets = [
-    {
-      name: "Scooby",
-      age: 8,
-      gender: "Male",
-      service: "grooming",
-      breed: "bulldog",
-    },
+let pets = []
+ 
+//create the pet constructor
+//parameters..name,age,gender,breed
+function Pet(name,age,gender,breed,service,type){
+    this.name=name;   //property example, when "this" is used it is called parameter
+    this.age=age;
+    this.gender=gender;
+    this.breed=breed;
+    this.service=service;
+    this.type=type;
 
-    {
-      name: "Scrappy",
-      age: 7,
-      gender: "Male",
-      service: "nail",
-      breed: "germanShepard",
-    },
-
-    {
-      name: "Tweety",
-      age: 85,
-      gender: "Female",
-      service: "grooming",
-      breed: "pitbull",
-    },
-];
-  
-console.log(pets);
+}
 
 function displayPetCount() {
-    let pets = length;
-
+    console.log(pets.length); 
 }
 
-function displayNames() {
-    document.getElementById("petList").innerHTML += `<li>${pets[0].name}`;
-    document.getElementById("petList").innerHTML += `<li>${pets[1].name}`;
-    document.getElementById("petList").innerHTML += `<li>${pets[2].name}`;
-    
+function register(){
+    let inputName=document.getElementById("txtName").value;
+    let inputAge=document.getElementById("txtAge").value;
+    let inputGender=document.getElementById("txtGender").value;
+    let inputBreed=document.getElementById("txtBreed").value;
+    let inputService=document.getElementById("txtService").value;
+    let inputType=document.getElementById("txtType").value;
+    console.log(inputName,inputAge,inputGender,inputBreed,inputService,inputType);
+    //add Service
+    //add Type
+// create the obj
+let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputService,inputType); //add Service and Type
+//pushing the new pet to the array
+pets.push(newPet);
+console.log(pets); //displaying the array
+displayPetCount(); //thi is a function
 }
+
+
+//Add Service and Type.  Type=type of pet

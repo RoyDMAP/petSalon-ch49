@@ -8,62 +8,57 @@
 </head>
 <body>
     <header>
+    <main> 
         <h1>Friendly Spaw Salon</h1>
         <nav>
             <a href="http://127.0.0.1:5500/index.html">Home</a>
         </nav>
-    </header>
-    <form class="form-container">
-        <fieldset>
-            <legend>Pet Information</legend>
-            <div class="input-container">
-                <label>Owner's Name:</label>
-                <input type="text">
+        <div class="form-container">
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input class="form-control" type="text" id="txtName">
             </div>
-            <div class="input-container">
-                <label>Pet Name:</label>
-                <input type="text">
+            <div class="mb-3">
+                <label class="form-label">Age:</label>
+                <input class="form-control" type="number" id="txtAge">
             </div>
-            <div class="input-container">
-                <label>Age:</label>
-                <input type="text">
+            <div class="mb-3">
+                <label class="form-label">Gender:</label>
+                <input class="form-control" type="text" id="txtGender">
             </div>
-            <div class="input-container">
-                <label>Breed:</label>
-                <input type="text">
+            <div class="mb-3">
+                <label class="form-label">Breed:</label>
+                <input class="form-control" type="text" id="txtBreed">
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Service Requested</legend>
-            <div class="input-container">
-                <label>Type:</label>
+            <div class="mb-3">
+                <label class="form-label">Service:</label>
+                <type="text" id="txtService">
                 <select type="Options" id="Options">
+                    <option value="Option">---N/A---</Option>
                     <option value="Option">---Grooming---</Option>
                     <option value="Option">---Bathing---</Option>
                     <option value="Option">---Nail Clipping---</Option>
+                    <option value="Option">---Ear Cleaning---</Option>  
+                </select>
+            <div class="mb-3">
+                <label class="form-label">Type:</label>
+                <type="text" id="txtType">
+                    <select type="Options" id="Options">
+                    <option value="Option">---N/A---</Option>
+                    <option value="Option">---Dog---</Option>
+                    <option value="Option">---Cat---</Option>
+                    <option value="Option">---Bird---</Option>
+                    <option value="Option">---Rabbit---</Option>  
                 </select>
             </div>
-            <div class="input-container">
-                <label>Existing Conditions:</label>
-                <input type="text">
+            <div class="btn-container">
+                <button class="btn btn-dark" onclick="register();">Register</button>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <div class="input-container">
-                <label>Email:</label>
-                <Input type="radio">
-                <label>Phone:</label>
-                <input type="radio">
-                
-            </div>
-            <div class="input-container">
-                <label>Date:</label>
-                <input type="datetime-local">
-                <label>Hour</label>
-                <input type="text">
-            </div>
-        </fieldset>
-    </form>
+        </div>
+    </main>  
+    <script src="./scripts/register.js"></script>
 </body>
+<footer>
+
+</footer>
 </html>
