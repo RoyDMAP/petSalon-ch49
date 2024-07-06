@@ -9,7 +9,9 @@ header{
 }
 
 body {
-    background-image: url(./img/background.jpg);
+    background-color: whitesmoke;
+    
+    
 
 }
 
@@ -24,6 +26,11 @@ h1{
        
 }
 
+h2{
+    padding: 30px;
+    text-align: left;
+}
+
 nav{
     text-align: right;
     padding: 10px;
@@ -33,20 +40,21 @@ nav{
     
 }
 
-button {
+.btn-container {
     display: block;
     margin: 0 auto; 
-    background-color: lightblue;
     color: rgb(195, 4, 4);
     border:color-mix(in hsl shorter hue, color percentage, color percentage);
-    padding: 20px 40px;
+    padding: 10px;
     font-size: 18px;
     border-radius: 2px;
-    margin-top: 20px;
+    margin-top: 50px;
+    
+    
 
 }
 #petList{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     border: 2px solid #ccc; 
     padding: 20px; 
@@ -54,11 +62,12 @@ button {
     margin: 20px auto; 
     background-color: #f0f0f0; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
 }
 
 #container {
-    margin-top: -300px;
-    margin-left: 200px;    
+    margin-top: -200px;
+    margin-left: 200px;   
     
 }
 
@@ -88,15 +97,12 @@ div.dog-body {
 }
 
 .form-container{
+    display: flex;
+    height: 200px;
+    flex-flow: column wrap;
     background-color: #dedede;
-    padding: 100px;
-    margin-top: 250px;
-    margin-bottom: 30px;
-    width: 90%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px; 
+    margin-top: 350px;
+    border: 5px solid gray;
     
 }
 
@@ -105,13 +111,47 @@ div.dog-body {
     padding: 10px;
     margin: 10px;
     border: 1px solid gray;
+    display: flex;
     
 }   
 
-footer{
-    background-color: whitesmoke;
-    background-size: cover;
-    height: 100px;
+.pet{
+    background-color: #dedede;
+    border:5px solid gray;
+    padding: 5px;
+
 }
 
+#pets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    margin-top: 2px;
+    text-align: left;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  .footer{
+    background-color: darkgray;
+    background-size: cover;
+    height: 100px;
+    padding: 1px;
+  }
 
