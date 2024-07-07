@@ -1,8 +1,10 @@
 /*header*/
 header{
-    background-image: url(./img/background2.jpg);
+    background-image: url(./img/background4.jpg);
+    background-color: lightgray;
     image-resolution: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 300px;
     padding: 1px;
 
@@ -17,7 +19,7 @@ body {
 
 h1{
     text-align: right;
-    padding-top: 50px;
+    padding-top: 80px;
     font-style: bold;
     font-display: flex;
     font-size: 70px;
@@ -27,8 +29,15 @@ h1{
 }
 
 h2{
-    padding: 30px;
-    text-align: left;
+    padding: 50px;
+    text-align: center;
+}
+
+p{
+  text-align: center;
+  margin-top: -50px;
+  font-size: 20px;
+
 }
 
 nav{
@@ -36,21 +45,30 @@ nav{
     padding: 10px;
     font-size: 20px;
     margin-right: 20px;
-    margin-top: -12%;
+    margin-top: -150px;
     
 }
 
 .btn-container {
-    display: block;
-    margin: 0 auto; 
-    color: rgb(195, 4, 4);
-    border:color-mix(in hsl shorter hue, color percentage, color percentage);
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 2px;
-    margin-top: 50px;
-    
-    
+  text-align: center; /* Center-aligns the button horizontally */
+  margin-top: 20px; /* Adds top margin */
+}
+
+.btn {
+  padding: 10px 20px; /* Adds padding inside the button */
+  font-size: 16px; /* Sets the font size of the button text */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border: none; /* Removes default button border */
+  border-radius: 4px; /* Rounds the button corners */
+}
+
+.btn-dark {
+  background-color: lightskyblue; /* Sets background color for the dark button */
+  color: black; /* Sets text color for the dark button */
+}
+
+.btn-dark:hover {
+  background-color: #555; /* Darkens background color on hover */
 
 }
 #petList{
@@ -101,9 +119,42 @@ div.dog-body {
     height: 200px;
     flex-flow: column wrap;
     background-color: #dedede;
-    margin-top: 350px;
+    margin-top: 250px;
     border: 5px solid gray;
     
+}
+.form-label {
+  display: inline-block;
+  width: 100px; 
+  margin-right: 10px; 
+  font-weight: bold; 
+
+}
+
+#txtType {
+  width: 200px; 
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+
+}
+
+#txtService {
+  width: 200px; 
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+
+}
+
+#txtPayment {
+  width: 200px; 
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
 
 .mb-3{
@@ -135,6 +186,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
+    margin-bottom: 30px;
 
   }
   
@@ -142,16 +194,25 @@ table {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
-    
+      
   }
   
   th {
     background-color: #f2f2f2;
+    
+   
   }
-  .footer{
-    background-color: darkgray;
-    background-size: cover;
-    height: 100px;
-    padding: 1px;
-  }
+  .footer {
+    background-color: gray; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 14px; 
+    color: black; 
+    font-style: italic; 
+}
+
+.footer p {
+    margin: 0; 
+    line-height: 1.5; 
+}
 

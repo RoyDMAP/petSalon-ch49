@@ -10,6 +10,7 @@ function displayPetcards() {
             <p>${pet.breed}</p>
             <p>${pet.service}</p>
             <p>${pet.type}</p>
+            <p>${pet.Payment}</p>
         </div>
         `;
     }
@@ -22,7 +23,7 @@ function displayTable(){
     for(let i=0;i<pets.length;i++){//travel the array
         let pet = pets[i];//getting each pet on the array (one by one)
         row+=`
-        <tr>
+        <tr id="${i}">
             <td>${i}</td>
             <td>${pet.name}</td>
             <td>${pet.age}</td>
@@ -30,13 +31,14 @@ function displayTable(){
             <td>${pet.breed}</td>
             <td>${pet.service}</td>
             <td>${pet.type}</td>
-            <td><button>Delete</button></td>
+            <td>${pet.Payment}</td>
+            <td><button onclick="deletePet(${i});">Delete</button></td>
         </tr>
         `;
     }
     document.getElementById("petTable").innerHTML=row;
 }
 function displayPetCount() {
-    console.log(pets.length)
+    document.getElementById("total").innerHTML="Total:" +pets.length;
 
 }

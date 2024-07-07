@@ -32,34 +32,42 @@
                 <input class="form-control" type="text" id="txtBreed">
             </div>
             <div class="mb-3">
-                <label class="form-label">Service:</label>
-                
+                <label class="form-label">Service:</label>   
                 <select type="Options" id="txtService">
-                    <option value="">N/A</Option>
+                    <option value=""></Option>
                     <option value="Grooming">Grooming</Option>
-                    <option value="---Bathing---">Bathing</Option>
+                    <option value="Bathing">Bathing</Option>
                     <option value="Nail Clipping">Nail Clipping</Option>
                     <option value="Ear Cleaning">Ear Cleaning</Option>  
                 </select>
             </div>
             <div class="mb-3">
-                <label class="form-label">Type:</label>
-                
+                <label class="form-label">Type:</label>             
                 <select type="Options" id="txtType">
-                    <option value="">N/A</Option>
+                    <option value=""></Option>
                     <option value="Dog">Dog</Option>
                     <option value="Cat">Cat</Option>
                     <option value="Bird">Bird</Option>
                     <option value="Rabbit">Rabbit</Option>  
                 </select>
             </div>
+            <div class="mb-3">
+                <label class="form-label">Payment:</label>
+                <select type="Options" id="txtPayment">
+                    <option value=""></Option> 
+                    <option value="CreditCard">CreditCard</Option>
+                    <option value="Check">Check</Option>
+                    <option value="Cash">Cash</Option>  
+                </select>
+            </div>
             <div class="btn-container">
-                <button class="btn btn-dark" onclick="register();">Register</button>
+                <button class="btn btn-dark" onclick="register();">Register Online</button>
             </div>
         </div>
     </main>  
     <section class="container">
         <h2>Registered pets</h2>
+        <p id="total"></p>
         <div id="pets">
 
         </div>
@@ -73,6 +81,7 @@
                 <th scope="col">Breed</th>
                 <th scope="col">Service</th>
                 <th scope="col">Type</th>
+                <th scope="Payment">Payment</th>
                 <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -82,13 +91,13 @@
             </tbody>
         </table>
     </section>
+    <footer class="footer">
+        <p> "We are commited to providing a pet friendly service to our customers.  Thank you for your trust in our service." Friendly Spaw Salon</p>
+    </footer>
     <script src="./scripts/register.js"></script>
     <script src="./scripts/display.js"></script>
     
 </body>
-<footer>
-
-</footer>
 </html>
 
 
@@ -97,9 +106,3 @@
 
 
 
-<table>
-    <thead>
-    </thead>
-    <tbody id="petTable">
-    </tbody>
-</table>
