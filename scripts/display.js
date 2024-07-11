@@ -32,7 +32,7 @@ function displayTable(){
             <td>${pet.service}</td>
             <td>${pet.type}</td>
             <td>${pet.Payment}</td>
-            <td><button onclick="deletePet(${i});">Delete</button></td>
+            <td><button class='btn btn-info' onclick="deletePet(${i});">Delete</button></td>
         </tr>
         `;
     }

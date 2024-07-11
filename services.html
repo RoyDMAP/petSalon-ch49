@@ -18,28 +18,26 @@
         </nav>
         <h1>Friendly Spaw Salon</h1>
     </header>
-    
-    <h4>Service Registration Form</h4>
-    <form id="Services">
-        <label for="Services">Services</label>
-        <select type="Options" id="txtServices">
-            <option value=""></Option>
-            <option value="Grooming">Grooming</Option>
-            <option value="Nail Clipping">Nail Clipping</Option>
-            <option value="Ear Cleaning">Ear Cleaning</Option>  
-        </select>
-        <label for="price">Price:</label>
-        <select type="Options" id="txtPrice">
+    <h2>Service Registration Form</h2>
+    <!-- <form id="Services"> -->
+        <label class="form-label">Description</label>
+        <input class="form-control" id="txtDescription" type="text"/>   
+        
+        <label class="form-label">Price:</label>
+        <input class="form-control" id="txtPrice" type="number"/>
+        <!-- <select type="Options" id="txtPrice">
             <option value=""></Option>
             <option value="Price">$100</Option>
             <option value="Price">$50</Option>
             <option value="Price">$75</Option>
-        </select>
+        </select> -->
         <div class="btn-container">
-            <button class="btn btn-dark" onclick="register();">Register Online</button>
+            <button class="btn btn-dark" onclick="register();">Register Service</button>
         </div>
-    </form>
+    <!-- </form> -->
         <script src="./scripts/services.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
     <footer>
 
     </footer>
