@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fashion Pet Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/mystyle.css">
+    <title>Friendly Spaw Salon Registration Form</title>
 </head>
-<body>
-    <header>
-    <h2>Register a new service</h2>
+<header>
     <nav>
         <a href="home.html">Home</a>
         <a href="register.html">Register</a> 
-        <a href="services.html">Services</a>
+        <a href="services.html">Services</a> 
     </nav>
+    <h3>Friendly Spaw Salon</h3>
 </header>
+<body>
+    <h4>Service Registration Form</h4>
+    <form id="Services">
+        <label for="Services">Services</label>
+        <select type="Options" id="txtServices">
+            <option value=""></Option>
+            <option value="Grooming">Grooming</Option>
+            <option value="Nail Clipping">Nail Clipping</Option>
+            <option value="Ear Cleaning">Ear Cleaning</Option>  
+        </select>
 
-<main>
-    <div>
-        <div>
-            
-
+        
+        <label for="price">Price:</label>
+        <select type="Options" id="txtPrice">
+            <option value=""></Option>
+            <option value="Price">$100</Option>
+            <option value="Price">$50</Option>
+            <option value="Price">$75</Option>
+        </select>
+        <div class="btn-container">
+            <button class="btn btn-dark" onclick="register();">Register Online</button>
         </div>
-    </div>
-</main>
+    </form>
+        <script src="./scripts/services.js"></script>
+    <footer>
+
+    </footer>
+    
 </body>
 </html>
