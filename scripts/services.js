@@ -28,19 +28,21 @@ function isValidService(newService) {
 
     if(newService.description == ""){
         isValidDescription = false
-        $("#txtDescription").css("background", "red")
+        $("#txtDescription").css("border", "solid 1px red")
 
     }else {
         isValidDescription = true
         $("#txtDescription").css("background", "none")
+        $("#txtDescription").val("")
     }
-    
+
     if(newService.price == ""){
         isValidPrice = false
         $("#txtPrice").css("border", "solid 1px red")
     }else {
         isValidPrice = true
         $("#txtPrice").css("border", "none")
+        $("#txtPrice").val("")
     }
     return isValidDescription && isValidPrice
 
