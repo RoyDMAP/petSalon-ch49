@@ -42,3 +42,5 @@ function displayPetCount() {
     document.getElementById("total").innerHTML="Total:" +pets.length;
 
 }
+
+

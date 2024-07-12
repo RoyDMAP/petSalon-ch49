@@ -25,7 +25,7 @@ function isValidService(newService) {
     //console.log(newService.Description)
     
     let isValidDescription = true; 
-
+   
     if(newService.description == ""){
         isValidDescription = false
         $("#txtDescription").css("border", "solid 1px red")
@@ -34,6 +34,7 @@ function isValidService(newService) {
         isValidDescription = true
         $("#txtDescription").css("background", "none")
         $("#txtDescription").val("")
+    
     }
 
     if(newService.price == ""){
@@ -43,9 +44,13 @@ function isValidService(newService) {
         isValidPrice = true
         $("#txtPrice").css("border", "none")
         $("#txtPrice").val("")
+        
     }
     return isValidDescription && isValidPrice
 
     console.log("isValidDescription", isValidDescription) 
     console.log("isValidPrice", isValidPrice)
 }
+
+
+
