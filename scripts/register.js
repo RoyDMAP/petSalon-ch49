@@ -2,7 +2,7 @@ console.log("register.js")
 
 // Pet Registration:
 
-// In the pets array, create 3 pets using object literals, eah with the following properties:
+// In the pets array, create 3 pets using object literals, each with the following properties:
 // Name
 // Age
 // Gender
@@ -58,7 +58,7 @@ if(isValid(newPet)){
     //pushing the new pet to the array
     pets.push(newPet);
     console.log(pets); //displaying the array
-    displayPetCount(); //thi is a function
+    displayPetCount(); //this is a function
     displayTable();
     clearForm();
     }
